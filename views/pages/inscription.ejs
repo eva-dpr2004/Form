@@ -1,0 +1,34 @@
+<%- include ('../include/header')%>
+
+<div class="ui raised very padded text container segment">
+  <h2>Inscription</h2>
+  <form action="/inscription" method="post">
+    <div class="inputs">
+      <div>
+        <label for="mom">Nom d'utilisateur:</label>
+        <input style="margin-left: 1.5%;" type="nom" id="nom" name="name">
+      </div>
+      <div>
+        <label for="mdp">Adresse e-mail :</label>
+        <input style="margin-left: 4%;" type="mot de passe" id="mot de passe" name="mail">
+      </div>
+      <div>
+        <label for="mdp">Mot de passe :</label>
+        <input style="margin-left: 6%;" type="mot de passe" id="mdp" name="mdp">
+      </div>
+      <div>
+        <label for="mdp">Num de téléphone :</label>
+        <input type="mot de passe" id="num" name="num">
+      </div>
+    </div>
+    <button type="submit" class="ui red labeled submit icon button" style="margin-top: 2%;">
+      <i class="icon edit"></i>S'inscrire
+    </button>
+    <div class="ui checkbox">
+        <input type="checkbox" name="example">
+        <label>Reçevoir des news par mail</label>
+    </div>
+  </form>
+</div>
+
+<%- include ('../include/footer')%>
